@@ -1,7 +1,12 @@
 
 /*
+Notes:
 Looked at this video for info on semaphores
-Need to recall that you can acquire ( x ) x number of permits but then have to release(x)
+Need to recall that you can acquire ( x ) x number of permits but then have to release(x).
+Must release and attain same number of permits. tryAcquire; if no permit available doesn't block
+
+
+Problem:
 Suppose we have a class:
 
 public class Foo {
